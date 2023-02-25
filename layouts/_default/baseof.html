@@ -59,7 +59,7 @@
   {{ end }}
 
   {{ partial "google-analytics.html" . }}
-  {{ partial "plausible-analytics.html" . }}
-
+  {{ partial "plausible-analytics.html" . }
+  {{ if .Params.math }}{{ partial "katex.html" . }}{{ end }}
 </body>
 </html>
